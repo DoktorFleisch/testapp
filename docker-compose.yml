@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  storema-testapp:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 7000:8080
+
+volumes:
+  database:
